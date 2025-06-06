@@ -1,0 +1,20 @@
+ <html>
+       <body>
+              <h1> Hello there! </h1>
+              <p>{{ respuesta.upper }} Llega tarde, son las {{hora}}</p>
+              <p><strong>Temas del Curso: </strong></p>
+              <p>
+                     <ul>
+                     {% if temas %}
+                            {% for i in temas %}
+
+                                   <li>{{ i|first }}</li>
+
+                            {% endfor %}
+                     {% else %}
+                            <p>No hay nadita que mostrar, mi rey</p>
+                     {% endif %}
+                     </ul>
+              </p>
+       </body>
+</html>
